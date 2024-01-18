@@ -1,0 +1,104 @@
+REPORTE.
+
+Primero que nada, nombrare las bibliotecas que usé en este programa y dire el proque de cada una, exceptuando alguna que otra, ya que son indispensables de todo programa, como es el 
+caso de <stdio.h>.
+-<string.h>. Para la manipulacion de cadenas de caracteres.
+-<stdlib>. Control de procesos, como lo son arreglos en este caso.
+-<conio.h>. Para getch().
+-<windows.h>. Estetica, Pausas y demas.
+
+Luego entonces, en este programa primero que nada di la bienvenida al usuario con un mensaje predeterminado.
+
+printf("¡Alto Ahi Forastero! La Clave o, ¡preparate a ser destruido!\n\n");
+printf("                  /(        )`	   			\n");
+printf("                  \ \___   / |				\n");
+printf("                  /- _  `-/  '				\n");
+printf("                 (/\/ \ \   /\				\n");
+printf("                 / /   | `    \				\n");
+printf("                  O O   ) /    |				\n");
+printf("                  `-^--'`<     '				\n");
+printf("                 (_.)  _  )   /				\n");
+printf("                  `.___/`    /				\n");
+printf("                    `-----' /				\n");
+printf("       <----.     __ / __   \				\n");
+printf("       <----|====O)))==) \) /====				\n");
+printf("       <----'    `--' `.__,' \				\n");
+printf("                    |        |				\n");
+printf("                    \       /				\n");
+printf("              ______( (_  / \______			\n");
+
+Y a esta y varias partes más del programa usé Sleep(Milisegundos) para separar cada parte del programa y dar al usuario tiempo de lectura sufuciente.
+
+Despues usé un ciclo para guardar la cadena de caracteres cuando se emula ingresar una contraseña, para asi, en la siguiente parte del programa, ya tener la respuesta a su pregunta. Y por
+ultimo, despedir al usuario solo como un demonio lo haria, ¡Destruyendolo!.
+
+printf("CLAVE: \n");
+	while(caracter = getch())
+	{
+	if (caracter == 13){
+				clave[i] = '.';
+				break;
+			}else if(caracter == 8){
+				if(i>0){
+					i--;
+					printf("\b \b");
+				}				
+			}else{
+				if(i < LONGITUD){
+					printf("%c", codigo[i]);
+					clave[i] = caracter;
+					i++;
+				}
+			}			
+		}
+		system("cls");
+		Beep(1000,500);
+		printf("\nMUY BIEN HUMANO, !PREGUNTAME LO QUE QUIERAS! LO SABRE. "); scanf("%c", &pregunta);
+		Beep(500,600);
+		printf("¡DEMASIADO FACIL!\n");
+		Beep(500,600);
+		Sleep(1000);
+		printf("\nTU RESPUESTA ES...\n");
+		Beep(1000,600);
+		Sleep(2000);
+		printf("\n %s\n", clave);
+		Beep(500,600);
+		Sleep(1000);
+		printf("\nAhora preparate a ser destruido en 10 segundos...");
+		Sleep(1000);
+		printf("\n		9!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		8!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		7!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		6!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		5!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		4!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		3!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		2!\n");
+		Sleep(1000);
+		Beep(800,700);
+		printf("\n		1!\n");
+		Sleep(1000);
+		Beep(800,700);
+		Beep(400,300);
+		printf("\nEliminando todo rastro de tu existencia! See you in Hell!");
+		Sleep(3000);
+		system("cls");
+		break;
+	}
+}
+clave[i] = '.'; ---->Inicializador de modo truco
+HECHO POR OCTAVIO ANTONIO ANTONIO JUÁREZ ROMERO Derechos Reservados.
